@@ -12,7 +12,7 @@ export function Vecino(
 
     return (
         <div className="vecino" >
-
+            <h2>Vecino</h2>
             <h4>{address === 'vecino' && message}</h4>
 
             <input type="text" placeholder="text message" onChange={(e) => { setMessage(e.target.value) }} />
