@@ -3,7 +3,7 @@ import './styles.css';
 
 export function Vecino(
 
-    {
+    { children,
         message,
         address,
         setMessage,
@@ -27,6 +27,8 @@ export function Vecino(
                 <option value="Nieto"> Nieto</option>
 
             </select>
+
+            {children}
 
         </div>
     )

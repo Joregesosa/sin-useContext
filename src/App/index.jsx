@@ -18,13 +18,21 @@ function App() {
   return (
     <React.Fragment>
 
-      <Padre>
+      <Padre
+        message={message.toUpperCase()}
+        address={address.toLocaleLowerCase()}
+        setMessage={setMessage}
+        setAddress={setAddress}
+      >
 
-        <Hijo>
+        <Hijo
+          message={message.toUpperCase()}
+          address={address.toLocaleLowerCase()}
+          setMessage={setMessage}
+          setAddress={setAddress}
+        >
 
-          <Nieto />
-
-          <Primo
+          <Nieto
             message={message.toUpperCase()}
             address={address.toLocaleLowerCase()}
             setMessage={setMessage}
@@ -40,7 +48,16 @@ function App() {
         address={address.toLocaleLowerCase()}
         setMessage={setMessage}
         setAddress={setAddress}
-      />
+      >
+
+        <Primo
+          message={message.toUpperCase()}
+          address={address.toLocaleLowerCase()}
+          setMessage={setMessage}
+          setAddress={setAddress}
+        />
+
+      </Vecino>
     </React.Fragment>
   )
 }
